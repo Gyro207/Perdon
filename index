@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo siento mucho</title>
+  <style>
+    body {
+      margin: 0;
+      background: #7e0bdc;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .emoji {
+      font-size: 100px;
+      animation: moveFace 2s infinite alternate;
+    }
+
+    .heart {
+      font-size: 80px;
+      color: red;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes moveFace {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(10px); }
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    .message {
+      margin-top: 30px;
+      max-width: 600px;
+      font-size: 20px;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🥺</div>
+  <div class="heart">❤️</div>
+  <div class="message">
+    <p>Disculpame. No fue mi intención lastimarte ni que terminemos así.</p>
+    <p>Vivimos cosas muy lindas y me duele que haya terminado de esta forma.</p>
+    <p>Ojalá podamos hablar con calma en algún momento. Te deseo lo mejor, de corazón.</p>
+  </div>
+</body>
+</html>
